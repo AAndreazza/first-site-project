@@ -5,7 +5,7 @@ import fotoAlana from '../../images/fotoAlana.jpg'
 
 const Team = () => {
     return (
-        <div class="bg-white py-32">
+        <div class="bg-gray-50 ">
         <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
             <div class="mx-auto max-w-2xl">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Conheça nosso time</h2>
