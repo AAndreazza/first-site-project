@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import fotoPerfil from '../../images/fotoPerfil.jpg'
+import fotoApresentacao from '../../images/fotoApresentacao.jpg'
 
 const Header = () => {
     return (
@@ -22,7 +22,8 @@ const Header = () => {
                 </button>
             </div>
             <div className='hidden lg:flex lg:gap-x-12'>
-                <Link to='#' className='text-base font-semibold leading-6 text-gray-900'>Sobre</Link>
+                <Link to='#' className='text-base font-semibold leading-6 text-gray-900'>Propósito</Link>
+                <Link to='#' className='text-base font-semibold leading-6 text-gray-900'>Nosso time</Link>
                 <Link to='#' className='text-base font-semibold leading-6 text-gray-900'>Serviços</Link>
                 <Link to='#' className='text-base font-semibold leading-6 text-gray-900'>Contatos</Link>
             </div>
@@ -72,7 +73,7 @@ const Header = () => {
                 <Link to='#' className='rounded-md bg-teal-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>Saiba mais</Link>
                 </div>
                 </div>
-                <img src={fotoPerfil} alt='' className='mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36'/>
+                <img src={fotoApresentacao} alt='' className='mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36'/>
             </div>
             </div>
             <div className='absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32'></div>
