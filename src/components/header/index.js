@@ -1,30 +1,84 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import fotoPerfil from '../../images/fotoPerfil.jpg'
 
 const Header = () => {
     return (
-        <nav className='flex items-center justify-between flex-wrap bg-teal-700 p-6'>
-        <div className='flex items-center flex-shrink-0 text-white mr-6'>
-            <svg className='fill-current h-8 w-8 mr-2' width='54' height='54' viewBox='0 0 54 54' xmlns='http://www.w3.org/2000/svg'><path d='M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z'/></svg>
-            <Link to='/'><span className='font-semibold text-2xl tracking-tight'>Spazio Vitta</span></Link> 
-        </div>
-        <div className='w-full block flex-grow lg:flex lg:items-center lg:w-auto'>
-            <div className='text-base lg:flex-grow'>
-            <Link to='#sobre' className='block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white mr-4'>
-                Sobre
-            </Link>
-            <Link to='#servicos' className='block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white mr-4'>
-                Serviços
-            </Link>
-            <Link to='#contatos' className='block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white'>
-                Contato
-            </Link>
+        <div className='bg-white'>
+        <header className='absolute inset-x-0 top-0 z-50'>
+            <nav className='mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8' aria-label='Global'>
+            <div className='flex lg:flex-1'>
+                <Link to='#' className='-m-1.5 p-1.5'>
+                <span className='sr-only'>Spazio Vitta</span>
+                <img className='h-8 w-auto' src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600' alt=''/>
+                </Link>
             </div>
-            <div>
-            <Link to='#whatsapp' className='inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-700 hover:bg-teal-100 mt-4 lg:mt-0'>Entre em contato</Link>
+            <div className='flex lg:hidden'>
+                <button type='button' className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'>
+                <span className='sr-only'>Menu</span>
+                <svg className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' aria-hidden='true'>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
+                </svg>
+                </button>
             </div>
+            <div className='hidden lg:flex lg:gap-x-12'>
+                <Link to='#' className='text-base font-semibold leading-6 text-gray-900'>Sobre</Link>
+                <Link to='#' className='text-base font-semibold leading-6 text-gray-900'>Serviços</Link>
+                <Link to='#' className='text-base font-semibold leading-6 text-gray-900'>Contatos</Link>
+            </div>
+            <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
+                <Link to='#' className='text-sm font-semibold leading-6 text-gray-900'>Whatsapp<span aria-hidden='true'>&rarr;</span></Link>
+            </div>
+            </nav>
+            <div className='lg:hidden' role='dialog' aria-modal='true'>
+            <div className='fixed inset-0 z-50'></div>
+            <div className='fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
+                <div className='flex items-center justify-between'>
+                <Link to='#' className='-m-1.5 p-1.5'>
+                    <span className='sr-only'>Spazio Vitta</span>
+                    <img className='h-8 w-auto' src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600' alt=''/>
+                </Link>
+                <button type='button' className='-m-2.5 rounded-md p-2.5 text-gray-700'>
+                    <span className='sr-only'>Close menu</span>
+                    <svg className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' aria-hidden='true'>
+                    <path stroke-linecap='round' stroke-linejoin='round' d='M6 18L18 6M6 6l12 12' />
+                    </svg>
+                </button>
+                </div>
+                <div className='mt-6 flow-root'>
+                <div className='-my-6 divide-y divide-gray-500/10'>
+                    <div className='space-y-2 py-6'>
+                    <Link to='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Sobre</Link>
+                    <Link to='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Serviços</Link>
+                    <Link to='#' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Contatos</Link>
+                    </div>
+                    <div className='py-6'>
+                    <Link to='#' className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Whatsapp</Link>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <div className='relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14'>
+            <div className='absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96' aria-hidden='true'></div>
+            <div className='mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8'>
+            <div className='mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8'>
+                <h1 className='max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto'>Seja gentil com seu corpo e sua mente!</h1>
+                <div className='mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1'>
+                <p className='text-lg leading-8 text-gray-600'>Quando você é gentil com seu corpo e mente, abre espaço para o crescimento pessoal e a felicidade, aumenta sua autoestima, melhorando sua relação consigo mesmo e com os outros.</p>
+                <p className='text-lg leading-8 text-gray-600'>Permita-se falhar, aprender e evoluir.</p>
+                <div className='mt-10 flex items-center gap-x-6'>
+                <Link to='#' className='rounded-md bg-teal-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>Saiba mais</Link>
+                </div>
+                </div>
+                <img src={fotoPerfil} alt='' className='mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36'/>
+            </div>
+            </div>
+            <div className='absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32'></div>
         </div>
-        </nav>
+        </div>
+
     )
 }
 
