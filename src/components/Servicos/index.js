@@ -25,15 +25,14 @@ const Servicos = () => {
                     <div className='group relative max-w-xl'>
                     <h3 className='mt-4 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
                         <Link to='#'>
-                        <span className='absolute inset-0'></span>
-                        Yoga Flow
+                        <span className='absolute inset-0'>Yoga Flow</span>
                         </Link>
                     </h3>
                     <p className='mt-4 text-sm leading-6 text-gray-600'>O Yoga Flow é uma prática dinâmica e fluída que combina movimento, respiração e consciência corporal para promover equilíbrio, força e flexibilidade. É uma modalidade de yoga que envolve uma sequência contínua de posturas fluidas, coordenadas com a respiração, criando uma dança harmoniosa entre corpo e mente.</p>
                     </div>
                     <div className='mt-2 flex border-t border-gray-900/5 pt-6'>
                     <div className='relative flex items-center gap-x-4'>
-                        <img src={fotoLuanna} alt='' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <img src={fotoLuanna} alt='Foto rosto Luanna' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6'>
                         <p className='font-semibold text-gray-900'>
                             <Link to='#'>
@@ -50,7 +49,7 @@ const Servicos = () => {
 
                 <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='drenagem-linfatica'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
-                    <img src={fotoDrenagem} alt='Yoga' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
+                    <img src={fotoDrenagem} alt='Drenagem' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 '></div>
                 </div>
                 <div>
@@ -82,7 +81,7 @@ const Servicos = () => {
 
                 <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='preenchimentos'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
-                    <img src={fotoPreenchimento} alt='Yoga' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
+                    <img src={fotoPreenchimento} alt='Preenchimento' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 '></div>
                 </div>
                 <div>
@@ -97,7 +96,7 @@ const Servicos = () => {
                     </div>
                     <div className='mt-2 flex border-t border-gray-900/5 pt-6'>
                     <div className='relative flex items-center gap-x-4'>
-                        <img src={fotoMaria} alt='' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <img src={fotoMaria} alt='Foto rosto Maria' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6'>
                         <p className='font-semibold text-gray-900'>
                             <Link to='#'>
@@ -114,7 +113,7 @@ const Servicos = () => {
 
                 <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='spa-day'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
-                    <img src={fotoSpa} alt='Yoga' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
+                    <img src={fotoSpa} alt='Spa Day' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 '></div>
                 </div>
                 <div>
@@ -129,7 +128,7 @@ const Servicos = () => {
                     </div>
                     <div className='mt-2 flex border-t border-gray-900/5 pt-2'>
                     <div className='relative flex items-center gap-x-4'>
-                        <img src={fotoAlana} alt='' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <img src={fotoAlana} alt='Foto rosto Alana' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6'>
                         <p className='font-semibold text-gray-900'>
                             <Link to='#'>
@@ -142,7 +141,7 @@ const Servicos = () => {
                     </div>
                     </div>
                     <div className='relative flex items-center gap-x-4'>
-                        <img src={fotoMaria} alt='' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <img src={fotoMaria} alt='Foto rosto Maria' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6 gap-x-10'>
                         <p className='font-semibold text-gray-900'>
                             <Link to='#'>
