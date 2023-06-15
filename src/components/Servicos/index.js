@@ -25,7 +25,8 @@ const Servicos = () => {
                     <div className='group relative max-w-xl'>
                     <h3 className='mt-4 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
                         <Link to='#'>
-                        <span className='absolute inset-0'>Yoga Flow</span>
+                        <span className='absolute inset-0'></span>
+                            Yoga Flow
                         </Link>
                     </h3>
                     <p className='mt-4 text-sm leading-6 text-gray-600'>O Yoga Flow é uma prática dinâmica e fluída que combina movimento, respiração e consciência corporal para promover equilíbrio, força e flexibilidade. É uma modalidade de yoga que envolve uma sequência contínua de posturas fluidas, coordenadas com a respiração, criando uma dança harmoniosa entre corpo e mente.</p>
