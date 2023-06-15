@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import logo from '../../images/logo.png'
 
 const Footer = () => {
     return(
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className='mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-18 lg:px-8 lg:pt-20'>
             <div className='xl:grid xl:grid-cols-3 xl:gap-8'>
             <div className='space-y-8'>
-                <img className='h-7' src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600' alt='Company name'/>
+                <img className='h-10 w-10 rounded-full' src={logo} alt='Company name'/>
                 <p className='text-sm leading-6 text-gray-600'>O autocuidado é o melhor presente que podemos dar a nós mesmos!</p>
                 <div className='flex space-x-6'>
                 <Link to='#' className='text-gray-400 hover:text-gray-500'>

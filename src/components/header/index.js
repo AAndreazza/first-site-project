@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import fotoApresentacao from '../../images/fotoApresentacao.jpg'
+import logo from '../../images/logo.png'
 
 const Header = () => {
     return (
@@ -10,7 +11,7 @@ const Header = () => {
             <div className='flex lg:flex-1'>
                 <Link to='#' className='-m-1.5 p-1.5'>
                 <span className='sr-only'>Spazio Vitta</span>
-                <img className='h-8 w-auto' src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600' alt='logo'/>
+                <img className='h-12 w-12 rounded-full' src={logo} alt='logo'/>
                 </Link>
             </div>
             <div className='flex lg:hidden'>
