@@ -13,10 +13,10 @@ const Servicos = () => {
         <div className='bg-white py-20 sm:py-20'>
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
             <div className='mx-auto max-w-2xl lg:max-w-4xl '>
-            <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl '>Sendo gentil consigo mesma...</h2>
+            <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl' id='servicos'>Sendo gentil consigo mesma...</h2>
             <p className='mt-2 text-lg leading-8 text-gray-600'>Fique por dentro dos nossos serviços que podem mudar a sua vida!</p>
             <div className='mt-8 space-y-10 lg:mt-8 lg:space-y-10'>
-                <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl'>
+                <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='yoga'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
                     <img src={fotoYoga} alt='Yoga' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 '></div>
@@ -48,7 +48,7 @@ const Servicos = () => {
                 </div>
                 </article>
 
-                <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl'>
+                <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='drenagem-linfatica'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
                     <img src={fotoDrenagem} alt='Yoga' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 '></div>
@@ -80,7 +80,7 @@ const Servicos = () => {
                 </div>
                 </article>
 
-                <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl'>
+                <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='preenchimentos'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
                     <img src={fotoPreenchimento} alt='Yoga' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 '></div>
@@ -112,7 +112,7 @@ const Servicos = () => {
                 </div>
                 </article>
 
-                <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl'>
+                <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='spa-day'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
                     <img src={fotoSpa} alt='Yoga' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 '></div>
