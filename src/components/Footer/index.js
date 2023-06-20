@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../../images/logo.png'
+// import logo from '../../images/logo.png'
 import { URLS } from '../../utils/constants'
+import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => {
     return(
@@ -12,7 +13,7 @@ const Footer = () => {
             <div className='space-y-8'>
                 <Link to='#'>
                 <span className='sr-only'>Spazio Vitta</span>
-                <img className='h-12 w-12 rounded-full' src={logo} alt='logo'/>
+                <StaticImage className='h-12 w-12 rounded-full' src="../../images/logo.png" alt='logo'/>
                 </Link>
                 <p className='text-sm leading-6 text-gray-600'>O autocuidado é o melhor presente que podemos dar a nós mesmos!</p>
                 <div className='flex space-x-6'>

@@ -1,7 +1,8 @@
 import React from 'react'
-import fotoMaria from '../../images/fotoMaria.jpg'
-import fotoLuanna from '../../images/fotoLuanna.jpg'
-import fotoAlana from '../../images/fotoAlana.jpg'
+// import fotoMaria from '../../images/fotoMaria.jpg'
+// import fotoLuanna from '../../images/fotoLuanna.jpg'
+// import "../../images/fotoMaria.jpg" from '../../images/"../../images/fotoMaria.jpg".jpg'
+import { StaticImage } from "gatsby-plugin-image"
 
 const Team = () => {
     return (
@@ -13,17 +14,17 @@ const Team = () => {
             </div>
             <ul role='list' className='mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
             <li>
-                <img className='mx-auto h-56 w-56 rounded-full' src={fotoLuanna} alt=''/>
+                <StaticImage className='mx-auto h-56 w-56 rounded-full' src="../../images/fotoLuanna.jpg" alt=''/>
                 <h3 className='mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900'>Luanna Catarina</h3>
                 <p className='text-sm leading-6 text-gray-600'>Fisioterapeuta</p>
             </li>
             <li>
-                <img className='mx-auto h-56 w-56 rounded-full' src={fotoMaria} alt=''/>
+                <StaticImage className='mx-auto h-56 w-56 rounded-full' src="../../images/fotoMaria.jpg" alt=''/>
                 <h3 className='mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900'>Maria Luiza</h3>
                 <p className='text-sm leading-6 text-gray-600'>Esteticista</p>
             </li>
             <li>
-                <img className='mx-auto h-56 w-56 rounded-full' src={fotoAlana} alt=''/>
+                <StaticImage className='mx-auto h-56 w-56 rounded-full' src="../../images/fotoAlana.jpg" alt=''/>
                 <h3 className='mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900'>Alana Cristina</h3>
                 <p className='text-sm leading-6 text-gray-600'>Massagista</p>
             </li>

@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import fotoApresentacao from '../../images/fotoApresentacao.jpg'
-import logo from '../../images/logo.png'
+// import fotoApresentacao from '../../images/fotoApresentacao.jpg'
+//import logo from '../../images/logo.png'
 import { URLS } from '../../utils/constants'
+import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => {
     return (
@@ -12,7 +13,7 @@ const Header = () => {
             <div className='flex lg:flex-1'>
                 <Link to='#' className='-m-1.5 p-1.5'>
                 <span className='sr-only'>Spazio Vitta</span>
-                <img className='h-12 w-12 rounded-full' src={logo} alt='logo'/>
+                <StaticImage className='h-12 w-12 rounded-full' src="../../images/logo.png" alt='logo'/>
                 </Link>
             </div>
 
@@ -45,7 +46,7 @@ const Header = () => {
                 <div className='flex items-center justify-between'>
                 <Link to='#' className='-m-1.5 p-1.5'>
                     <span className='sr-only'>Spazio Vitta</span>
-                    <img className='h-12 w-12 rounded-full' src={logo} alt='logo'/>
+                    <StaticImage className='h-12 w-12 rounded-full' src={logo} alt='logo'/>
                 </Link>
                 <button type='button' className='-m-2.5 rounded-md p-2.5 text-gray-700'>
                     <span className='sr-only'>Close menu</span>
@@ -84,7 +85,7 @@ const Header = () => {
                 <Link to={URLS.whatsapp} className='rounded-md bg-teal-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>Saiba mais</Link>
                 </div>
                 </div>
-                <img src={fotoApresentacao} alt='foto de apresentacao' className='mt-10 pt-25 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36'/>
+                <StaticImage src="../../images/fotoApresentacao.jpg" alt='foto de apresentacao' className='mt-10 pt-25 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36'/>
             </div>
             </div>
             <div className='absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32'></div>

@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import fotoMaria from '../../images/fotoMaria.jpg'
-import fotoLuanna from '../../images/fotoLuanna.jpg'
-import fotoAlana from '../../images/fotoAlana.jpg'
-import fotoYoga from '../../images/fotoYoga.jpg'
-import fotoSpa from '../../images/fotoSpa.jpg'
-import fotoDrenagem from '../../images/fotoDrenagem.jpg'
-import fotoPreenchimento from '../../images/fotoPreenchimento.jpg'
+// import fotoMaria from '../../images/fotoMaria.jpg'
+// import fotoLuanna from '../../images/fotoLuanna.jpg'
+// import fotoAlana from '../../images/fotoAlana.jpg'
+// import fotoYoga from '../../images/fotoYoga.jpg'
+// import fotoSpa from '../../images/fotoSpa.jpg'
+// import fotoDrenagem from '../../images/fotoDrenagem.jpg'
+// import fotoPreenchimento from '../../images/fotoPreenchimento.jpg'
+import { StaticImage } from "gatsby-plugin-image"
 
 const Servicos = () => {
     return (
@@ -18,7 +19,7 @@ const Servicos = () => {
             <div className='mt-8 space-y-10 lg:mt-8 lg:space-y-10'>
                 <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='yoga'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
-                    <img src={fotoYoga} alt='Yoga' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
+                    <StaticImage src="../../images/fotoYoga.jpg" alt='Yoga' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 '></div>
                 </div>
                 <div>
@@ -33,7 +34,7 @@ const Servicos = () => {
                     </div>
                     <div className='mt-2 flex border-t border-gray-900/5 pt-6'>
                     <div className='relative flex items-center gap-x-4'>
-                        <img src={fotoLuanna} alt='Foto rosto Luanna' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <StaticImage src="../../images/fotoLuanna.jpg" alt='Foto rosto Luanna' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6'>
                         <p className='font-semibold text-gray-900'>
                             <Link to='#'>
@@ -50,7 +51,7 @@ const Servicos = () => {
 
                 <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='drenagem-linfatica'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
-                    <img src={fotoDrenagem} alt='Drenagem' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
+                    <StaticImage src="../../images/fotoDrenagem.jpg" alt='Drenagem' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 '></div>
                 </div>
                 <div>
@@ -65,7 +66,7 @@ const Servicos = () => {
                     </div>
                     <div className='mt-2 flex border-t border-gray-900/5 pt-6'>
                     <div className='relative flex items-center gap-x-4'>
-                        <img src={fotoAlana} alt='Alana' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <StaticImage src="../../images/fotoAlana.jpg" alt='Alana' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6'>
                         <p className='font-semibold text-gray-900'>
                             <Link to='#'>
@@ -82,7 +83,7 @@ const Servicos = () => {
 
                 <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='preenchimentos'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
-                    <img src={fotoPreenchimento} alt='Preenchimento' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
+                    <StaticImage src="../../images/fotoPreenchimento.jpg" alt='Preenchimento' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 '></div>
                 </div>
                 <div>
@@ -97,7 +98,7 @@ const Servicos = () => {
                     </div>
                     <div className='mt-2 flex border-t border-gray-900/5 pt-6'>
                     <div className='relative flex items-center gap-x-4'>
-                        <img src={fotoMaria} alt='Foto rosto Maria' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <StaticImage src="../../images/fotoMaria.jpg" alt='Foto rosto Maria' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6'>
                         <p className='font-semibold text-gray-900'>
                             <Link to='#'>
@@ -114,7 +115,7 @@ const Servicos = () => {
 
                 <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='spa-day'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
-                    <img src={fotoSpa} alt='Spa Day' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
+                    <StaticImage src="../../images/fotoSpa.jpg" alt='Spa Day' className='absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10 '></div>
                 </div>
                 <div>
@@ -129,7 +130,7 @@ const Servicos = () => {
                     </div>
                     <div className='mt-2 flex border-t border-gray-900/5 pt-2'>
                     <div className='relative flex items-center gap-x-4'>
-                        <img src={fotoAlana} alt='Foto rosto Alana' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <StaticImage src="../../images/fotoAlana.jpg" alt='Foto rosto Alana' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6'>
                         <p className='font-semibold text-gray-900'>
                             <Link to='#'>
@@ -142,7 +143,7 @@ const Servicos = () => {
                     </div>
                     </div>
                     <div className='relative flex items-center gap-x-4'>
-                        <img src={fotoMaria} alt='Foto rosto Maria' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <StaticImage src="../../images/fotoMaria.jpg" alt='Foto rosto Maria' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6 gap-x-10'>
                         <p className='font-semibold text-gray-900'>
                             <Link to='#'>
