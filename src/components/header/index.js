@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-// import fotoApresentacao from '../../images/fotoApresentacao.jpg'
-//import logo from '../../images/logo.png'
 import { URLS } from '../../utils/constants'
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -32,6 +30,7 @@ const Header = () => {
                 <Link to='#proposito' className='text-base font-semibold leading-6 text-gray-900'>Propósito</Link>
                 <Link to='#time' className='text-base font-semibold leading-6 text-gray-900'>Nosso time</Link>
                 <Link to='#servicos' className='text-base font-semibold leading-6 text-gray-900'>Serviços</Link>
+                <Link to='blog' className='text-base font-semibold leading-6 text-gray-900'>Blog</Link>
                 <Link to='#contato' className='text-base font-semibold leading-6 text-gray-900'>Contatos</Link>
             </div>
             <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
