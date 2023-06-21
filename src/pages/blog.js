@@ -2,6 +2,7 @@ import React from 'react'
 //import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 
+// mudar blog de lugar, colocar em templates e criar uma nova pagina aqui.
 // usar localFile para imagens nao deu certo... praticar mais!!
 
 const Blog = ({ data, ...props }) => {
