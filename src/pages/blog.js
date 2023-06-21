@@ -1,16 +1,19 @@
 import React from 'react'
-import Layout from '../components/Layout'
+//import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
+
+// usar localFile para imagens nao deu certo... praticar mais!!
 
 const Blog = ({ data, ...props }) => {
     return (
-            <Layout>
+            <div>
             <h1>{data.contentfulPost.titulo}</h1>
+            <img src={data.contentfulPost.imagemApresentacao.resize.src}/>
             <div dangerouslySetInnerHTML={{
                 __html: data.contentfulPost.conteudo.childMarkdownRemark.html
             }} />
             <pre>{JSON.stringify(props, null, 2)}</pre>
-            </Layout>
+            </div>
     )
 }
 
@@ -21,6 +24,11 @@ export const pageQuery = graphql`
         conteudo {
             childMarkdownRemark {
               html
+            }
+          }
+        imagemApresentacao {
+            resize(width: 200, height: 200) {
+              src
             }
           }
         }
