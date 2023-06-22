@@ -1,11 +1,9 @@
 import React from 'react'
-//import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import { BLOCKS, MARKS } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 // mudar blog de lugar, colocar em templates e criar uma nova pagina aqui.
-// usar localFile para imagens nao deu certo... praticar mais!!
 
 const options = {
   renderMark: {
@@ -20,13 +18,14 @@ const options = {
     [BLOCKS.HEADING_6]: (node, children) => <h2 className='mt-4 text-sm font-bold'>{children}</h2>,
     [BLOCKS.PARAGRAPH]: (node, children) => <p className='mt-8 text-xl text-gray-700 leading-8'>{children}</p>,
 
-    // VER AQUI IMEDIATAMENTE
+    /* 
+    Para imagens no meio do texto:
     [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
       <pre>
-        {JSON.stringify(node.data.target.sys, null, 2)}
-        {JSON.stringify(children, null, 2)}
+        {JSON.stringify(node, null, 2)}
       </pre>
-    )
+    ) */
+
   }
 }
 
@@ -37,6 +36,7 @@ const Blog = ({ data, ...props }) => {
     return (
             <div>
             <h1>{data.contentfulPost.titulo}</h1>
+            {/* usar localFile para imagens nao deu certo... praticar mais!! */}
             <img alt=' ' src={data.contentfulPost.imagemApresentacao.resize.src}/>
             <div 
               dangerouslySetInnerHTML={{
