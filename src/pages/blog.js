@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery, Link} from "gatsby"
+import LayoutSimples from "../components/LayoutSimples"
 
 // Incluir imagens...
 const POSTS_QUERY = graphql`
@@ -24,6 +25,7 @@ const POSTS_QUERY = graphql`
 const Blog = () => {
     const data = useStaticQuery(POSTS_QUERY)
     return (
+        <LayoutSimples> 
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {data.posts.edges.map(post => {
                 return ( 
@@ -52,6 +54,7 @@ const Blog = () => {
             )
         })}
         </div>
+        </LayoutSimples>
     )
 }
 
