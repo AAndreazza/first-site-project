@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery, Link} from "gatsby"
 
+// Incluir imagens...
 const POSTS_QUERY = graphql`
     query {
         posts: allContentfulPost(filter: {visivel: {eq: true}}) {
