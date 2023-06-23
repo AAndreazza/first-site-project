@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { URLS } from '../../utils/constants'
 import { StaticImage } from "gatsby-plugin-image"
 
-const Footer = () => {
+const FooterSimples = () => {
     return(
         <footer className='bg-white' aria-labelledby='footer-heading'>
         <h2 id='footer-heading' className='sr-only'>Footer</h2>
@@ -37,52 +37,6 @@ const Footer = () => {
                 </div>
             </div>
             <div className='mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0'>
-                <div className='md:grid md:grid-cols-2 md:gap-8'>
-                <div>
-                    <h3 className='text-sm font-semibold leading-6 text-gray-900'>Serviços</h3>
-                    <ul role='list' className='mt-6 space-y-4'>
-                    <li>
-                        <Link to='#yoga' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Yoga Flow</Link>
-                    </li>
-                    <li>
-                        <Link to='#drenagem-linfatica' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Drenagem Linfática</Link>
-                    </li>
-                    <li>
-                        <Link to='#preenchimentos' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Preenchimentos</Link>
-                    </li>
-                    <li>
-                        <Link to='#spa-day' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Spa Day</Link>
-                    </li>
-                    </ul>
-                </div>
-                <div className='mt-10 md:mt-0'>
-                    <h3 className='text-sm font-semibold leading-6 text-gray-900'>Informações</h3>
-                    <ul role='list' className='mt-6 space-y-4'>
-                    <li>
-                        <Link to='#proposito' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Propósito</Link>
-                    </li>
-                    <li>
-                        <Link to='#time' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Nossa equipe</Link>
-                    </li>
-                    <li>
-                        <Link to={URLS.whatsapp} className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Trabalhe conosco</Link>
-                    </li>
-                    <li>
-                        <Link to='#contato' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Contatos</Link>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-                <div className='md:grid md:grid-cols-2 md:gap-8'>
-                <div className='mt-10 md:mt-0'>
-                    <h3 className='text-sm font-semibold leading-6 text-gray-900'>Legal</h3>
-                    <ul role='list' className='mt-6 space-y-4'>
-                    <li>
-                        <Link to='#' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Políticas de Privacidade</Link>
-                    </li>
-                    </ul>
-                </div>
-                </div>
             </div>
             </div>
             <div className='mt-16 border-t border-gray-900/10 pt-4 sm:mt-2 lg:mt-2'>
@@ -94,4 +48,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default FooterSimples

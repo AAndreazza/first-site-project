@@ -126,7 +126,7 @@ const Servicos = () => {
                         Spa Day
                         </Link>
                     </h3>
-                    <p className='mt-4 text-sm leading-6 text-gray-600'>O Spa Day é um dia dedicado ao relaxamento e ao cuidado pessoal, proporcionando uma experiência revigorante para o corpo e a mente. Durante esse dia especial, as pessoas têm a oportunidade de desacelerar o ritmo frenético da vida cotidiana e se entregarem a momentos de tranquilidade e bem-estar. O nosso spa oferece uma ampla gama de tratamentos terapêuticos, como massagens relaxantes, banhos aromáticos, tratamentos faciais, terapias de água, entre outros. </p>
+                    <p className='mt-4 text-sm leading-6 text-gray-600'>O Spa Day é um dia dedicado ao relaxamento e ao cuidado pessoal, proporcionando uma experiência revigorante para o corpo e a mente. Durante esse dia especial, as pessoas têm a oportunidade de desacelerar o ritmo frenético da vida cotidiana e se entregarem a momentos de tranquilidade e bem-estar. O nosso spa oferece massagens relaxantes, banhos aromáticos, tratamentos faciais, entre outros. </p>
                     </div>
                     <div className='mt-2 flex border-t border-gray-900/5 pt-2'>
                     <div className='relative flex items-center gap-x-4'>
@@ -142,18 +142,7 @@ const Servicos = () => {
                         </div>
                     </div>
                     </div>
-                    <div className='relative flex items-center gap-x-4'>
-                        <StaticImage src="../../images/fotoMaria.jpg" alt='Foto rosto Maria' className='h-10 w-10 rounded-full bg-gray-50'/>
-                        <div className='text-sm leading-6 gap-x-10'>
-                        <p className='font-semibold text-gray-900'>
-                            <Link to='#'>
-                            <span className='absolute inset-0'></span>
-                            Maria Luiza
-                            </Link>
-                        </p>
-                        <p className='text-gray-600'>Esteticista</p>
-                        </div>
-                    </div>
+
                 </div>
                 </article> 
             </div>

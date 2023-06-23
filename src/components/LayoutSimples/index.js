@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../Footer'
+import FooterSimples from '../FooterSimples'
 import HeaderSimples from '../HeaderSimples'
 
 const LayoutSimples = ({ children }) => {
@@ -7,7 +7,7 @@ const LayoutSimples = ({ children }) => {
         <div>
             <HeaderSimples />
             {children}
-            <Footer />
+            <FooterSimples />
         </div>
     )
 }
