@@ -3,8 +3,6 @@ import { graphql } from 'gatsby'
 import { BLOCKS, MARKS } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
-// mudar blog de lugar, colocar em templates e criar uma nova pagina aqui.
-
 const options = {
   renderMark: {
     [MARKS.BOLD]: text => <strong className='text-gray-900 font-bold'>{text}</strong>
