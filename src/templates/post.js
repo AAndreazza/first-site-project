@@ -41,7 +41,7 @@ const Post = ({ data }) => {
               <h1 class="mt-2 text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl">{data.contentfulPost.titulo}</h1>
               <div class="mt-6 text-xl leading-8">{documentToReactComponents(conteudoRichJson, options)}</div>
             </div>
-            <div className='bg-teal-700 py-8 rounded-lg mt-20' id='contato'>
+            <div className='bg-teal-700 py-8 rounded-lg mt-20'>
             <div className='px-4 text-center sm:px-4 sm:text-center'>
               <h3 className='text-4xl font-semibold leading-6 text-gray-200'>Preparada para cuidar de você?</h3>
               <p className='mt-2 text-2xl leading-8 text-gray-300'>Agende um horário conosco!</p>
@@ -66,7 +66,6 @@ export const pageQuery = graphql`
     query ($slug: String!) {
         contentfulPost(slug: {eq: $slug}, visivel: {eq: true}) {
         titulo
-        slug
         imagemApresentacao {
             resize(width: 200, height: 200) {
               src
