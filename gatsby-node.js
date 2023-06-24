@@ -10,12 +10,6 @@ exports.createPages = async({ graphql, actions }) => {
                 node {
                 titulo
                 slug
-                conteudo {
-                    internal {
-                    content
-                    type
-                    }
-                }
                 }
             }
             }

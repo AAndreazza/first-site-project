@@ -27,7 +27,7 @@ const options = {
   }
 }
 
-const Post = ({ data, ...props }) => {
+const Post = ({ data }) => {
 
   const conteudoRichJson = JSON.parse(data.contentfulPost.conteudoRich.raw)
 
@@ -36,11 +36,6 @@ const Post = ({ data, ...props }) => {
             <h1>{data.contentfulPost.titulo}</h1>
             {/* usar localFile para imagens nao deu certo... praticar mais!! */}
             <img alt=' ' src={data.contentfulPost.imagemApresentacao.resize.src}/>
-            <div 
-              dangerouslySetInnerHTML={{
-                __html: data.contentfulPost.conteudo.childMarkdownRemark.html
-              }} 
-            />
             <div>
               {documentToReactComponents(conteudoRichJson, options)}
             </div>
@@ -52,11 +47,6 @@ export const pageQuery = graphql`
     query ($slug: String!) {
         contentfulPost(slug: {eq: $slug}, visivel: {eq: true}) {
         titulo
-        conteudo {
-            childMarkdownRemark {
-              html
-            }
-          }
         imagemApresentacao {
             resize(width: 200, height: 200) {
               src

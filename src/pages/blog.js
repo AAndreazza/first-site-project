@@ -10,12 +10,11 @@ const POSTS_QUERY = graphql`
             node {
             titulo
             slug
-            conteudo {
-                internal {
-                content
-                type
+            imagemApresentacao {
+                resize(width: 320, height: 350) {
+                  src
                 }
-            }
+              }
             }
         }
         }
@@ -44,8 +43,8 @@ const Blog = () => {
                     <Link to={post.node.slug}>
                     <img 
                         class="aspect-[3/2] w-full rounded-2xl object-cover" 
-                        src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" 
-                        alt=""
+                        src={post.node.imagemApresentacao.resize.src}
+                        alt="imagem de apresentação do post"
                     />
                     <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900 text-center">
                         {post.node.titulo}
