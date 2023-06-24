@@ -66,6 +66,7 @@ export const pageQuery = graphql`
     query ($slug: String!) {
         contentfulPost(slug: {eq: $slug}, visivel: {eq: true}) {
         titulo
+        slug
         imagemApresentacao {
             resize(width: 200, height: 200) {
               src
