@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery, Link} from "gatsby"
-import LayoutSimples from "../components/LayoutSimples"
+import LayoutBlog from "../components/LayoutBlog"
 
 // Incluir imagens...
 const POSTS_QUERY = graphql`
@@ -24,7 +24,7 @@ const POSTS_QUERY = graphql`
 const Blog = () => {
     const data = useStaticQuery(POSTS_QUERY)
     return (
-        <LayoutSimples> 
+        <LayoutBlog> 
             <div class="mx-8 max-w-2xl lg:mx-8 mt-40">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Informações valiosas para alcançar o equilíbrio entre a mente e o corpo</h2>
             <p class="mt-6 text-lg leading-8 text-gray-600">Nossa missão é motivar você a cuidar de si mesmo(a) e descobrir o potencial ilimitado dentro de si. Prepare-se para embarcar em uma jornada de autodescoberta, superação e bem-estar. </p>
@@ -57,7 +57,7 @@ const Blog = () => {
             )
         })}
         </div>
-        </LayoutSimples>
+        </LayoutBlog>
     )
 }
 

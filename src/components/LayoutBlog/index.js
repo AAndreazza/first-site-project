@@ -1,15 +1,15 @@
 import React from 'react'
 import FooterSimples from '../FooterSimples'
-import HeaderSimples from '../HeaderSimples'
+import HeaderBlog from '../HeaderBlog'
 
-const LayoutSimples = ({ children }) => {
+const LayoutBlog = ({ children }) => {
     return (
         <div>
-            <HeaderSimples />
+            <HeaderBlog />
             {children}
             <FooterSimples />
         </div>
     )
 }
 
-export default LayoutSimples
+export default LayoutBlog

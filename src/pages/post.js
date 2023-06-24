@@ -1,7 +1,9 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { BLOCKS, MARKS } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import LayoutPost from "../components/LayoutPost"
+import { URLS } from '../utils/constants'
 
 const options = {
   renderMark: {
@@ -14,7 +16,7 @@ const options = {
     [BLOCKS.HEADING_4]: (node, children) => <h2 className='mt-8 mb-4 text-xl font-bold'>{children}</h2>,
     [BLOCKS.HEADING_5]: (node, children) => <h2 className='mt-6 mb-2 text-lg font-bold'>{children}</h2>,
     [BLOCKS.HEADING_6]: (node, children) => <h2 className='mt-4 text-sm font-bold'>{children}</h2>,
-    [BLOCKS.PARAGRAPH]: (node, children) => <p className='mt-8 text-xl text-gray-700 leading-8'>{children}</p>,
+    [BLOCKS.PARAGRAPH]: (node, children) => <p className='mt-8 text-xl text-gray-800 leading-8'>{children}</p>,
 
     /* 
     Para imagens no meio do texto:
@@ -33,13 +35,30 @@ const Post = ({ data }) => {
 
     return (
             <div>
-            <h1>{data.contentfulPost.titulo}</h1>
-            {/* usar localFile para imagens nao deu certo... praticar mais!! */}
-            <img alt=' ' src={data.contentfulPost.imagemApresentacao.resize.src}/>
-            <div>
-              {documentToReactComponents(conteudoRichJson, options)}
+            <LayoutPost>
+            <div class="bg-white px-6 py-32 lg:px-8">
+            <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+              <h1 class="mt-2 text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl">{data.contentfulPost.titulo}</h1>
+              <div class="mt-6 text-xl leading-8">{documentToReactComponents(conteudoRichJson, options)}</div>
             </div>
+            <div className='bg-teal-700 py-8 rounded-lg mt-20' id='contato'>
+            <div className='px-4 text-center sm:px-4 sm:text-center'>
+              <h3 className='text-4xl font-semibold leading-6 text-gray-200'>Preparada para cuidar de você?</h3>
+              <p className='mt-2 text-2xl leading-8 text-gray-300'>Agende um horário conosco!</p>
             </div>
+            <div className='mt-8 flex justify-center'>
+              <Link
+                to={URLS.whatsapp}
+                className='rounded-md bg-teal-500 px-4 py-2 text-2xl font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500'
+              >
+                ENTRAR EM CONTATO
+              </Link>
+            </div>
+          </div>
+          </div>
+
+      </LayoutPost> 
+      </div> 
     )
 }
 
