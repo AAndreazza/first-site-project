@@ -40,47 +40,47 @@ const Footer = () => {
                 <div className='md:grid md:grid-cols-2 md:gap-8'>
                 <div>
                     <h3 className='text-sm font-semibold leading-6 text-gray-900'>Serviços</h3>
-                    <ul role='list' className='mt-6 space-y-4'>
-                    <li>
+                    <div role='list' className='mt-6 space-y-4'>
+                    <div>
                         <Link to='#yoga' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Yoga Flow</Link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <Link to='#drenagem-linfatica' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Drenagem Linfática</Link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <Link to='#preenchimentos' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Preenchimentos</Link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <Link to='#spa-day' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Spa Day</Link>
-                    </li>
-                    </ul>
+                    </div>
+                    </div>
                 </div>
                 <div className='mt-10 md:mt-0'>
                     <h3 className='text-sm font-semibold leading-6 text-gray-900'>Informações</h3>
-                    <ul role='list' className='mt-6 space-y-4'>
-                    <li>
+                    <div role='list' className='mt-6 space-y-4'>
+                    <div>
                         <Link to='/blog' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Blog</Link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <Link to='#time' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Nossa equipe</Link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <Link to={URLS.whatsapp} className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Trabalhe conosco</Link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <Link to='#contato' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Contatos</Link>
-                    </li>
-                    </ul>
+                    </div>
+                    </div>
                 </div>
                 </div>
                 <div className='md:grid md:grid-cols-2 md:gap-8'>
                 <div className='mt-10 md:mt-0'>
                     <h3 className='text-sm font-semibold leading-6 text-gray-900'>Legal</h3>
-                    <ul role='list' className='mt-6 space-y-4'>
-                    <li>
+                    <div role='list' className='mt-6 space-y-4'>
+                    <div>
                         <Link to='#incluir-politica' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Políticas de Privacidade</Link>
-                    </li>
-                    </ul>
+                    </div>
+                    </div>
                 </div>
                 </div>
             </div>
