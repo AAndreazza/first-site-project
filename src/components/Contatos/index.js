@@ -4,10 +4,10 @@ import { URLS } from '../../utils/constants'
 
 const Contatos = () => {
   return (
-    <div className='bg-teal-700 py-8' id='contato'>
+    <div className='bg-teal-700 py-8'>
       <div className='px-4 text-center sm:px-4 sm:text-center'>
-        <h3 className='text-4xl font-semibold leading-6 text-gray-200'>Preparada para cuidar de você?</h3>
-        <p className='mt-2 text-2xl leading-8 text-gray-300'>Agende um horário conosco!</p>
+        <h3 className='text-4xl font-semibold leading-9 text-gray-200'>Preparada para cuidar de você?</h3>
+        <p className='mt-2 text-2xl leading-6 text-gray-300'>Agende um horário conosco!</p>
       </div>
       <div className='mt-8 flex justify-center'>
         <Link
