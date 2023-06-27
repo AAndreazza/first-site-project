@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { URLS } from '../../utils/constants'
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     return (
         <div className='bg-gray-50'>
         <header className='absolute inset-x-0 top-0 z-50'>
@@ -15,17 +16,19 @@ const Header = () => {
                 </Link>
             </div>
 
-        {/* Botão para abrir barra lateral... 
+        {/* Barra lateral - abrir */}
             <div className='flex lg:hidden'>
-            <button type='button' className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'>
+            <button 
+                type='button' 
+                className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'
+                onClick={() => setIsSidebarOpen(true)}
+            >
             <span className='sr-only'>Menu</span>
             <svg className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' aria-hidden='true'>
                 <path stroke-linecap='round' stroke-linejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
             </svg>
             </button>
             </div>
-            */}
-        
 
             <div className='hidden lg:flex lg:gap-x-12'>
                 <Link to='#proposito' className='text-base font-semibold leading-6 text-gray-900'>Propósito</Link>
@@ -39,16 +42,20 @@ const Header = () => {
             </div>
             </nav>
             
-        {/* Barra lateral 
-            <div className='lg:hidden' role='dialog' aria-modal='true'>
+        {/* Barra lateral - opções e fechar */}
+        <div className={`lg:hidden ${isSidebarOpen ? '' : 'hidden'}`} role='dialog' aria-modal='true'>
             <div className='fixed inset-0 z-50'></div>
             <div className='fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
                 <div className='flex items-center justify-between'>
-                <Link to='#' className='-m-1.5 p-1.5'>
+                <Link to='#' className='-m-1.5 p-1.5' >
                     <span className='sr-only'>Spazio Vitta</span>
                     <StaticImage className='h-12 w-12 rounded-full' src='../../images/logo.png' alt='logo'/>
                 </Link>
-                <button type='button' className='-m-2.5 rounded-md p-2.5 text-gray-700'>
+                <button 
+                    type='button' 
+                    className='-m-2.5 rounded-md p-2.5 text-gray-700'
+                    onClick={() => setIsSidebarOpen(false)}
+                >
                     <span className='sr-only'>Close menu</span>
                     <svg className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' aria-hidden='true'>
                     <path stroke-linecap='round' stroke-linejoin='round' d='M6 18L18 6M6 6l12 12' />
@@ -58,10 +65,11 @@ const Header = () => {
                 <div className='mt-6 flow-root'>
                 <div className='-my-6 divide-y divide-gray-500/10'>
                     <div className='space-y-2 py-6'>
-                    <Link to='#proposito' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Propósito</Link>
-                    <Link to='#time' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Nosso Time</Link>
-                    <Link to='#servicos' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Serviços</Link>
-                    <Link to='#contato' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Contatos</Link>
+                    <Link to='#proposito' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'><button onClick={() => setIsSidebarOpen(false)}>Propósito</button></Link>
+                    <Link to='#time' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'><button onClick={() => setIsSidebarOpen(false)}>Nosso Time</button></Link>
+                    <Link to='#servicos' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'><button onClick={() => setIsSidebarOpen(false)}>Serviços</button></Link>
+                    <Link to='blog' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'><button onClick={() => setIsSidebarOpen(false)}>Blog</button></Link>
+                    <Link to='#contato' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'><button onClick={() => setIsSidebarOpen(false)}>Contatos</button></Link>
                     </div>
                     <div className='py-6'>
                     <Link to={URLS.whatsapp} className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Whatsapp</Link>
@@ -70,7 +78,7 @@ const Header = () => {
                 </div>
             </div>
             </div> 
-      */}
+      
 
         </header>
         <div className='relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-2'>
