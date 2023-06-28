@@ -3,7 +3,8 @@ import { graphql, Link } from 'gatsby'
 import { BLOCKS, MARKS } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import LayoutPost from "../components/LayoutPost"
-import { URLS } from '../utils/constants'
+import { CTA_WHATSAPP_MENSAGENS } from '../../utils/constants'
+import { getWhatsUrl } from '../../utils/index.js'
 
 const options = {
   renderMark: {
@@ -48,7 +49,7 @@ const Post = ({ data }) => {
             </div>
             <div className='mt-8 flex justify-center'>
               <Link
-                to={URLS.whatsapp}
+                to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.atendimentoCta)}
                 className='rounded-md bg-teal-500 px-4 py-2 text-2xl font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500'
               >
                 ENTRAR EM CONTATO
