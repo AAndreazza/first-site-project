@@ -3,8 +3,8 @@ import { graphql, Link } from 'gatsby'
 import { BLOCKS, MARKS } from '@contentful/rich-text-types'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import LayoutPost from "../components/LayoutPost"
-import { CTA_WHATSAPP_MENSAGENS } from '../../utils/constants'
-import { getWhatsUrl } from '../../utils/index.js'
+import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
+import { getWhatsUrl } from '../utils/index.js'
 
 const options = {
   renderMark: {
