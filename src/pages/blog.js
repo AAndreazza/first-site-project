@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql, useStaticQuery, Link} from 'gatsby'
 import LayoutBlog from '../components/LayoutBlog'
 
-// Incluir imagens...
 const POSTS_QUERY = graphql`
     query {
         posts: allContentfulPost(filter: {visivel: {eq: true}}) {

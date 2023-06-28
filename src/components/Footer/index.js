@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { URLS } from '../../utils/constants'
+import { CTA_WHATSAPP_MENSAGENS, URLS } from '../../utils/constants'
+import { getWhatsUrl } from '../../utils/index.js'
 import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => {
@@ -65,7 +66,7 @@ const Footer = () => {
                         <Link to='#time' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Nossa equipe</Link>
                     </div>
                     <div>
-                        <Link to={URLS.whatsapp} className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Trabalhe conosco</Link>
+                        <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.footerCtaTrabalheConosco)} className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Trabalhe conosco</Link>
                     </div>
                     <div>
                         <Link to='#contato' className='text-sm leading-6 text-gray-600 hover:text-gray-900'>Contatos</Link>

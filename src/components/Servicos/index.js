@@ -1,12 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-// import fotoMaria from '../../images/fotoMaria.jpg'
-// import fotoLuanna from '../../images/fotoLuanna.jpg'
-// import fotoAlana from '../../images/fotoAlana.jpg'
-// import fotoYoga from '../../images/fotoYoga.jpg'
-// import fotoSpa from '../../images/fotoSpa.jpg'
-// import fotoDrenagem from '../../images/fotoDrenagem.jpg'
-// import fotoPreenchimento from '../../images/fotoPreenchimento.jpg'
+import { CTA_WHATSAPP_MENSAGENS } from '../../utils/constants'
+import { getWhatsUrl } from '../../utils/index.js'
 import { StaticImage } from "gatsby-plugin-image"
 
 const Servicos = () => {
@@ -26,7 +21,7 @@ const Servicos = () => {
                 <div>
                     <div className='group relative max-w-xl'>
                     <h3 className='ml-3 mt-4 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 lg:ml-0'>
-                        <Link to='#incluir-link'>
+                        <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.servicoCtaYoga)}>
                         <span className='absolute inset-0'></span>
                             Yoga Flow
                         </Link>
@@ -55,7 +50,7 @@ const Servicos = () => {
                 <div>
                     <div className='group relative max-w-xl'>
                     <h3 className='ml-3 mt-4 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 lg:ml-0'>
-                        <Link to='#incluir-link'>
+                        <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.servicoCtaDrenagem)}>
                         <span className='absolute inset-0'></span>
                         Drenagem Linfática
                         </Link>
@@ -84,7 +79,7 @@ const Servicos = () => {
                 <div>
                     <div className='group relative max-w-xl'>
                     <h3 className='ml-3 mt-4 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
-                        <Link to='#incluir-link'>
+                        <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.servicoCtaPrenchimentos)}>
                         <span className='absolute inset-0'></span>
                         Preenchimento labial, olheiras, bigode, mandíbula...
                         </Link>
@@ -113,7 +108,7 @@ const Servicos = () => {
                 <div>
                     <div className='group relative max-w-xl'>
                     <h3 className='ml-3 mt-4 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 lg:ml-0'>
-                        <Link to='#inlcuir-link'>
+                        <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.servicoCtaSpa)}>
                         <span className='absolute inset-0'></span>
                         Spa Day
                         </Link>

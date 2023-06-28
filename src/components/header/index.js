@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import { URLS } from '../../utils/constants'
+import { CTA_WHATSAPP_MENSAGENS } from '../../utils/constants'
+import { getWhatsUrl } from '../../utils/index.js'
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     return (
-        <div className='bg-gray-50'>
+        <div className='bg-white'>
         <header className='absolute inset-x-0 top-0 z-50'>
             <nav className='mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8' aria-label='Global'>
             <div className='flex lg:flex-1'>
@@ -20,8 +21,8 @@ const Header = () => {
             <div className='flex lg:hidden'>
             <button 
                 type='button' 
-                className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700'
-                onClick={() => setIsSidebarOpen(true)}
+                className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700' 
+                onClick={() => setIsSidebarOpen(true)} 
             >
             <span className='sr-only'>Menu</span>
             <svg className='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' aria-hidden='true'>
@@ -38,7 +39,7 @@ const Header = () => {
                 <Link to='#contato' className='text-base font-semibold leading-6 text-gray-900'>Contatos</Link>
             </div>
             <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
-                <Link to={URLS.whatsapp} className='text-sm font-semibold leading-6 text-gray-900'>Whatsapp<span aria-hidden='true'>&rarr;</span></Link>
+                <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.atendimentoCta)} className='text-sm font-semibold leading-6 text-gray-900'>Whatsapp<span aria-hidden='true'>&rarr;</span></Link>
             </div>
             </nav>
             
@@ -72,7 +73,7 @@ const Header = () => {
                     <Link to='#contato' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'><button onClick={() => setIsSidebarOpen(false)}>Contatos</button></Link>
                     </div>
                     <div className='py-6'>
-                    <Link to={URLS.whatsapp} className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Whatsapp</Link>
+                    <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.atendimentoCta)} className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Whatsapp</Link>
                     </div>
                 </div>
                 </div>
@@ -90,7 +91,7 @@ const Header = () => {
                 <p className='text-lg leading-8 text-gray-600'>Quando você é gentil com seu corpo e mente, abre espaço para o crescimento pessoal e a felicidade, aumenta sua autoestima e melhora sua relação consigo mesmo e com os outros.</p>
                 <p className='text-lg leading-8 text-gray-600'>Permita-se falhar, aprender e evoluir!</p>
                 <div className='mt-10 flex items-center gap-x-6'>
-                <Link to={URLS.whatsapp} className='rounded-md bg-teal-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>Saiba mais</Link>
+                <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.atendimentoCta)} className='rounded-md bg-teal-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>Saiba mais</Link>
                 </div>
                 </div>
                 <StaticImage src="../../images/fotoApresentacao.jpg" alt='foto de apresentacao' className='mt-10 pt-25 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36'/>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import { URLS } from '../../utils/constants'
+import { CTA_WHATSAPP_MENSAGENS } from '../../utils/constants'
+import { getWhatsUrl } from '../../utils/index.js'
 import { StaticImage } from "gatsby-plugin-image"
 
 const HeaderSimples = () => {
@@ -37,7 +38,7 @@ const HeaderSimples = () => {
                 <Link to='/' className='text-base font-semibold leading-6 text-gray-900'>Contatos</Link>
             </div>
             <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
-                <Link to={URLS.whatsapp} className='text-sm font-semibold leading-6 text-gray-900'>Whatsapp<span aria-hidden='true'>&rarr;</span></Link>
+                <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.atendimentoCta)} className='text-sm font-semibold leading-6 text-gray-900'>Whatsapp<span aria-hidden='true'>&rarr;</span></Link>
             </div>
             </nav>
 
@@ -71,7 +72,7 @@ const HeaderSimples = () => {
                     <Link to='/' className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'><button onClick={() => setIsSidebarOpen(false)}>Contatos</button></Link>
                     </div>
                     <div className='py-6'>
-                    <Link to={URLS.whatsapp} className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Whatsapp</Link>
+                    <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.atendimentoCta)} className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>Whatsapp</Link>
                     </div>
                 </div>
                 </div>
