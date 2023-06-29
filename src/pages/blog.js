@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery, Link} from 'gatsby'
 import LayoutBlog from '../components/LayoutBlog'
+import Seo from '../components/Seo'
 
 const POSTS_QUERY = graphql`
     query {
@@ -24,6 +25,7 @@ const Blog = () => {
     const data = useStaticQuery(POSTS_QUERY)
     return (
         <LayoutBlog> 
+            <Seo title='Blog - Spazzio Mavie' description='Informações valiosas para alcançar o equilíbrio entre a mente e o corpo.'/>
             <div className='mx-8 max-w-2xl lg:mx-8 mt-40'>
             <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>Informações valiosas para alcançar o equilíbrio entre a mente e o corpo</h2>
             <p className='mt-6 text-lg leading-8 text-gray-600'>Nossa missão é motivar você a cuidar de si mesmo(a) e descobrir o potencial ilimitado dentro de si. Prepare-se para embarcar em uma jornada de autodescoberta, superação e bem-estar. </p>

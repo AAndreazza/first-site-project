@@ -5,6 +5,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import LayoutPost from "../components/LayoutPost"
 import { CTA_WHATSAPP_MENSAGENS } from '../utils/constants'
 import { getWhatsUrl } from '../utils/index.js'
+import Seo from '../components/Seo'
 
 const options = {
   renderMark: {
@@ -36,6 +37,7 @@ const Post = ({ data }) => {
 
     return (
             <div>
+              <Seo title={data.contentfulPost.titulo}/>
             <LayoutPost>
             <div class="bg-white px-6 py-32 lg:px-8">
             <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
