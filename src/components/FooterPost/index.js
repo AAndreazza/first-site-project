@@ -36,10 +36,8 @@ const FooterPost = () => {
                 </Link>
                 </div>
             </div>
-            <div className='mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0'>
             </div>
-            </div>
-            <div className='mt-16 border-t border-gray-900/10 pt-4 sm:mt-2 lg:mt-2'>
+            <div className='mt-6 border-t border-gray-900/10 pt-4 sm:mt-2 lg:mt-2'>
             <p className='text-xs leading-5 text-gray-500'>&copy; Site feito para aprendizado. Imagens não autorais, assim como nomes e profissões inventadas.</p>
             </div>
         </div>
