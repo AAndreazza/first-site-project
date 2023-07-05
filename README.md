@@ -1,5 +1,5 @@
 # first-site-project
 
-Esta aplicação trata-se de um site web desenvolvido com o objetivo de praticar JavaScript, React, Gatsby, Tailwind...
+Esta aplicação trata-se de um site web desenvolvido com o objetivo de praticar JavaScript, React, Gatsby, Tailwind, GraphQL...
 <br />
-Acompanhe o desenvolvimento: [https://first-site-project.netlify.app/]
+Veja o resultado: [https://first-site-project.netlify.app/]
