@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { CTA_WHATSAPP_MENSAGENS } from '../../utils/constants'
 import { getWhatsUrl } from '../../utils/index.js'
 import Logo from '../../images/logo.png'
-import FotoApresentacao from '../../images/fotoApresentacao.jpg'
+import FotoApresentacao from '../../images/fotoApresentacao.webp'
 
 const Header = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);

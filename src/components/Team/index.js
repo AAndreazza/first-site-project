@@ -1,7 +1,7 @@
 import React from 'react'
-import fotoMaria from '../../images/fotoMaria.jpg'
-import fotoLuanna from '../../images/fotoLuanna.jpg'
-import fotoAlana from '../../images/fotoAlana.jpg'
+import fotoMaria from '../../images/fotoMaria.webp'
+import fotoLuanna from '../../images/fotoLuanna.webp'
+import fotoAlana from '../../images/fotoAlana.webp'
 
 const Team = () => {
     return (
