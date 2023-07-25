@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { CTA_WHATSAPP_MENSAGENS } from '../../utils/constants'
 import { getWhatsUrl } from '../../utils/index.js'
-import { StaticImage } from "gatsby-plugin-image"
+import Logo from '../../images/logo.png'
+import FotoApresentacao from '../../images/fotoApresentacao.jpg'
 
 const Header = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -13,7 +14,7 @@ const Header = () => {
             <div className='flex lg:flex-1'>
                 <Link to='#' className='-m-1.5 p-1.5'>
                 <span className='sr-only'>Spazio Vitta</span>
-                <StaticImage className='h-12 w-12 rounded-full' src="../../images/logo.png" alt='logo'/>
+                <img className='h-12 w-12 rounded-full' src={Logo} alt='logo'/>
                 </Link>
             </div>
 
@@ -51,7 +52,7 @@ const Header = () => {
                 <Link to='/' className='-m-1.5 p-1.5'>
                     <button onClick={() => setIsSidebarOpen(false)}>
                     <span className='sr-only'>Spazio Vitta</span>
-                    <StaticImage className='h-12 w-12 rounded-full' src='../../images/logo.png' alt='logo'/>
+                    <img className='h-12 w-12 rounded-full' src={Logo} alt='logo'/>
                     </button>
                 </Link>
                 <button 
@@ -96,7 +97,7 @@ const Header = () => {
                 <Link to={getWhatsUrl(CTA_WHATSAPP_MENSAGENS.atendimentoCta)} className='rounded-md bg-teal-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>Saiba mais</Link>
                 </div>
                 </div>
-                <StaticImage src="../../images/fotoApresentacao.jpg" alt='foto de apresentacao' className='mt-10 pt-25 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36'/>
+                <img src={FotoApresentacao} alt='foto de apresentacao' className='mt-10 pt-25 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36'/>
             </div>
             </div>
             <div className='absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32'></div>

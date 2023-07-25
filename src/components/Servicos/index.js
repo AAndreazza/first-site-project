@@ -2,7 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { CTA_WHATSAPP_MENSAGENS } from '../../utils/constants'
 import { getWhatsUrl } from '../../utils/index.js'
-import { StaticImage } from "gatsby-plugin-image"
+import fotoYoga from '../../images/fotoYoga.jpg'
+import fotoLuanna from '../../images/fotoLuanna.jpg'
+import fotoDrenagem from '../../images/fotoDrenagem.jpg'
+import fotoAlana from '../../images/fotoAlana.jpg'
+import fotoMaria from '../../images/fotoMaria.jpg'
+import fotoPreenchimento from '../../images/fotoPreenchimento.jpg'
+import fotoSpa from '../../images/fotoSpa.jpg'
 
 const Servicos = () => {
     return (
@@ -15,7 +21,7 @@ const Servicos = () => {
                 
                 <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='yoga'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
-                    <StaticImage src="../../images/fotoYoga.jpg" alt='Yoga' className='absolute inset-0 h-full w-full rounded-lg bg-gray-50 object-cover'/>
+                    <img src={fotoYoga} alt='Yoga' className='absolute inset-0 h-full w-full rounded-lg bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10 '></div>
                 </div>
                 <div>
@@ -30,7 +36,7 @@ const Servicos = () => {
                     </div>
                     <div className='ml-3 mt-2 flex border-t border-gray-900/5 pt-6 lg:ml-0'>
                     <div className='relative flex items-center gap-x-4 -mt-2 mb-3 lg:mb-3 lg:mt-0'>
-                        <StaticImage src="../../images/fotoLuanna.jpg" alt='Foto rosto Luanna' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <img src={fotoLuanna} alt='Foto rosto Luanna' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6'>
                         <p className='font-semibold text-gray-900'>
                             Luanna Catarina   
@@ -44,7 +50,7 @@ const Servicos = () => {
 
                 <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='drenagem-linfatica'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
-                    <StaticImage src="../../images/fotoDrenagem.jpg" alt='Drenagem' className='absolute inset-0 h-full w-full rounded-lg bg-gray-50 object-cover'/>
+                    <img src={fotoDrenagem} alt='Drenagem' className='absolute inset-0 h-full w-full rounded-lg bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10 '></div>
                 </div>
                 <div>
@@ -59,7 +65,7 @@ const Servicos = () => {
                     </div>
                     <div className='ml-3 mt-2 flex border-t border-gray-900/5 pt-6 lg:ml-0'>
                     <div className='relative flex items-center gap-x-4 -mt-2 mb-3 lg:mb-3 lg:mt-0'>
-                        <StaticImage src="../../images/fotoAlana.jpg" alt='Alana' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <img src={fotoAlana} alt='Alana' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6'>
                         <p className='font-semibold text-gray-900'>
                             Alana Cristina
@@ -73,7 +79,7 @@ const Servicos = () => {
 
                 <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='preenchimentos'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
-                    <StaticImage src="../../images/fotoPreenchimento.jpg" alt='Preenchimento' className='absolute inset-0 h-full w-full rounded-lg bg-gray-50 object-cover'/>
+                    <img src={fotoPreenchimento} alt='Preenchimento' className='absolute inset-0 h-full w-full rounded-lg bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10 '></div>
                 </div>
                 <div>
@@ -88,7 +94,7 @@ const Servicos = () => {
                     </div>
                     <div className='ml-3 mt-2 flex border-t border-gray-900/5 pt-6 lg:ml-0'>
                     <div className='relative flex items-center gap-x-4 -mt-2 mb-3 lg:mb-3 lg:mt-0'>
-                        <StaticImage src="../../images/fotoMaria.jpg" alt='Foto rosto Maria' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <img src={fotoMaria} alt='Foto rosto Maria' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6'>
                         <p className='font-semibold text-gray-900'>
                             Maria Luiza
@@ -102,7 +108,7 @@ const Servicos = () => {
 
                 <article className='relative isolate flex flex-col gap-8 lg:flex-row bg-gray-300 rounded-lg shadow-xl' id='spa-day'>
                 <div className='relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0'>
-                    <StaticImage src="../../images/fotoSpa.jpg" alt='Spa Day' className='absolute inset-0 h-full w-full rounded-lg bg-gray-50 object-cover'/>
+                    <img src={fotoSpa} alt='Spa Day' className='absolute inset-0 h-full w-full rounded-lg bg-gray-50 object-cover'/>
                     <div className='absolute inset-0 rounded-lg ring-1 ring-inset ring-gray-900/10 '></div>
                 </div>
                 <div>
@@ -117,7 +123,7 @@ const Servicos = () => {
                     </div>
                     <div className='ml-3 mt-2 flex border-t border-gray-900/5 pt-6 lg:ml-0'>
                     <div className='relative flex items-center gap-x-4 -mt-2 mb-3 lg:mb-3 lg:mt-0'>
-                        <StaticImage src="../../images/fotoAlana.jpg" alt='Foto rosto Alana' className='h-10 w-10 rounded-full bg-gray-50'/>
+                        <img src={fotoAlana} alt='Foto rosto Alana' className='h-10 w-10 rounded-full bg-gray-50'/>
                         <div className='text-sm leading-6'>
                         <p className='font-semibold text-gray-900'>
                             Alana Cristina

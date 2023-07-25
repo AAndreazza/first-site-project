@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { CTA_WHATSAPP_MENSAGENS } from '../../utils/constants'
 import { getWhatsUrl } from '../../utils/index.js'
-import { StaticImage } from "gatsby-plugin-image"
+import Logo from '../../images/logo.png'
 
 const HeaderSimples = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -12,7 +12,7 @@ const HeaderSimples = () => {
             <div className='flex lg:flex-1'>
                 <Link to='/' className='-m-1.5 p-1.5'>
                 <span className='sr-only'>Spazio Vitta</span>
-                <StaticImage className='h-12 w-12 rounded-full' src="../../images/logo.png" alt='logo'/>
+                <img className='h-12 w-12 rounded-full' src={Logo} alt='logo'/>
                 </Link>
             </div>
 
@@ -50,7 +50,7 @@ const HeaderSimples = () => {
                 <Link to='/' className='-m-1.5 p-1.5'>
                     <button onClick={() => setIsSidebarOpen(false)}>
                     <span className='sr-only'>Spazio Vitta</span>
-                    <StaticImage className='h-12 w-12 rounded-full' src='../../images/logo.png' alt='logo'/>
+                    <img className='h-12 w-12 rounded-full' src={Logo} alt='logo'/>
                     </button>
                 </Link>
                 <button 
