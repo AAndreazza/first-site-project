@@ -54,7 +54,7 @@ const Blog = () => {
                         {post.node.titulo}
                     </h3>
                     </Link>
-                    {/* Incluir foto com nome, maybe */}      
+                    {/* Incluir foto com nome, maybe... */}      
                 </div>
             </div>
             </div>
