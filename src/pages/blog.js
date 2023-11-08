@@ -42,11 +42,14 @@ const Blog = () => {
                 <p className='mt-6 text-lg leading-8 text-gray-600'>We're a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
                 </div>*/}
                     <Link to={post.node.slug}>
+                    {post.node.imagemApresentacao && post.node.imagemApresentacao.resize && (
+                    
                     <img 
                         className='aspect-[3/2] w-full rounded-2xl object-cover' 
                         src={post.node.imagemApresentacao.resize.src}
                         alt='imagem de apresentação do post'
                     />
+                    )}
                     <h3 className='mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900 text-center'>
                         {post.node.titulo}
                     </h3>
