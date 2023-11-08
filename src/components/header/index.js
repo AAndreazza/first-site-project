@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import { Popover } from '@headlessui/react'
 import { Link } from 'gatsby'
 import { CTA_WHATSAPP_MENSAGENS } from '../../utils/constants'
 import { getWhatsUrl } from '../../utils/index.js'
 import Logo from '../../images/logo.png'
 import FotoApresentacao from '../../images/fotoApresentacao.webp'
+
 
 const Header = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -35,7 +37,17 @@ const Header = () => {
             <div className='hidden lg:flex lg:gap-x-12'>
                 <Link to='#proposito' className='text-base font-semibold leading-6 text-gray-900'>Propósito</Link>
                 <Link to='#time' className='text-base font-semibold leading-6 text-gray-900'>Nosso time</Link>
-                <Link to='#servicos' className='text-base font-semibold leading-6 text-gray-900'>Serviços</Link>
+                <Popover className="relative">
+                    <Popover.Button className='text-base font-semibold leading-6 text-gray-900'>Serviços ⌵</Popover.Button>
+                    <Popover.Panel className="absolute z-12">
+                        <div className="bg-teal-700 rounded-lg mt-2 p-4 w-60 h-34">
+                        <a href="/#yoga" className='block text-base font-semibold leading-6 text-white my-2 hover:bg-teal-500'>Yoga Flow</a>
+                        <a href="/#drenagem-linfatica" className='block text-base font-semibold leading-6 text-white my-2 hover:bg-teal-500'>Drenagem Linfática</a>
+                        <a href="/#preenchimentos" className='block text-base font-semibold leading-6 text-white my-2 hover:bg-teal-500'>Preenchimentos</a>
+                        <a href="/#spa-day" className='block text-base font-semibold leading-6 text-white my-2 hover:bg-teal-500'>Spa Day</a>
+                        </div>
+                    </Popover.Panel>
+                    </Popover>
                 <Link to='blog' className='text-base font-semibold leading-6 text-gray-900'>Blog</Link>
                 <Link to='#contato' className='text-base font-semibold leading-6 text-gray-900'>Contatos</Link>
             </div>

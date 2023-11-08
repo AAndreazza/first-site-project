@@ -19,6 +19,6 @@ module.exports = {
             options: {
               icon: 'src/images/logo.png',
             }
-          }
+        }
     ]
 }
